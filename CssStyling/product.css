@@ -1,0 +1,515 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Lexend:wght@200;500;700&family=Poppins&display=swap');
+/* DogToy */
+
+body{
+    overflow-x: hidden;
+}
+.backgroundblur{
+    filter: blur(4px);
+    transition: all .1s ease-in-out;
+}
+
+.bodypage{
+    height: 100vh;
+}
+.categorydog{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categorycat{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel{
+    width: 100%;
+    height: 40rem;
+    position: relative;
+    top:9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-inner{
+    display: flex;
+
+    position: absolute;
+}
+
+.carousel-item{
+    height: 32rem;
+    width: 100%;
+    background-color:#EDFCFF;
+    position: relative;
+}
+
+
+.ball{
+    position: absolute;
+    left:5rem;
+    height: 20rem;
+    width: 20rem;
+    background: #ffffff;
+    box-shadow: 5px 20px 10px  rgba(0, 119, 255, 0.171);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem 1rem;
+    transition: all .5s ease-in-out;
+    z-index: 100;
+}
+.ball:hover{
+    height: 28rem;
+    width: 20rem;
+    background-color: #fff;
+}
+.treat{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    height: 20rem;
+    width: 20rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 20px 10px  rgba(0, 119, 255, 0.171);
+    border-radius: 1rem 1rem;
+    transition: all .5s ease-in-out;
+    z-index: 100;
+}
+
+.treat:hover{
+    height: 28rem;
+    width: 20rem;
+    background-color: #fff;
+}
+.bowl{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right:5rem;
+    height: 20rem;
+    width: 20rem;
+    background: #fff;
+    box-shadow: 5px 20px 10px  rgba(0, 119, 255, 0.171);
+    border-radius: 1rem 1rem;
+    transition: all .5s ease-in-out;
+    z-index: 100;
+}
+.bowl:hover{
+    height: 28rem;
+    width: 20rem;
+    background-color: #fff;
+}
+.cup{
+    position: absolute;
+    left:5rem;
+    height: 20rem;
+    width: 20rem;
+    background: #ffffff;
+    box-shadow: 5px 20px 10px  rgba(0, 119, 255, 0.171);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem 1rem;
+    transition: all .5s ease-in-out;
+    z-index: 100;
+}
+.cup:hover{
+    height: 28rem;
+    width: 20rem;
+    background-color: #fff;
+}
+.croc{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    height: 20rem;
+    width: 20rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 20px 10px  rgba(0, 119, 255, 0.171);
+    border-radius: 1rem 1rem;
+    transition: all .5s ease-in-out;
+    z-index: 100;
+}
+
+.croc:hover{
+    height: 28rem;
+    width: 20rem;
+    background-color: #fff;
+}
+.rugby{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right:5rem;
+    height: 20rem;
+    width: 20rem;
+    background: #fff;
+    box-shadow: 5px 20px 10px  rgba(0, 119, 255, 0.171);
+    border-radius: 1rem 1rem;
+    transition: all .5s ease-in-out;
+    z-index: 100;
+}
+
+.rugby:hover{
+    height: 28rem;
+    width: 20rem;
+    background-color: #fff;
+}
+
+
+/* Javascript Css */
+.dogproductname{
+    position: absolute;
+    top: 16rem;
+    color: #006096;
+    text-align: center;
+    left: 1rem;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.dogcost{
+    position: absolute;
+    top: 19rem;
+    color: #5bd5ee;
+    text-align: center;
+    left: 1rem;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.dognameappear{
+    position: absolute;
+    top: 18rem;
+    opacity: 100;
+}
+
+.dogcostappear{
+    position: absolute;
+    top: 21rem;
+    opacity: 100;
+}
+.bowl:hover{
+    height: 28rem;
+    width: 20rem;
+    background-color: #fff;
+}
+
+.dogtoyimage{
+    position: absolute;
+    top:2rem;
+    height: 12rem;
+    width: 12rem;
+    /* display: none; */
+}
+
+.treat .dogtoyimage{
+    top:1rem;
+    height: 15rem;
+    width: 12rem;
+}
+
+#prev{
+    position: absolute;
+    font-size: 3rem;
+    left:0.5rem;
+    color:#006096;
+}
+
+#next{
+    position: absolute;
+    right:0.5rem;
+    font-size: 3rem;
+    color:#006096;
+}
+.catproductname{
+    position: absolute;
+    top: 16rem;
+    color: #006096;
+    text-align: center;
+    left: 1rem;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.catcost{
+    position: absolute;
+    top: 19rem;
+    color: #5bd5ee;
+    text-align: center;
+    left: 1rem;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.catnameappear{
+    position: absolute;
+    top: 18rem;
+    opacity: 100;
+}
+
+.catcostappear{
+    position: absolute;
+    top: 21rem;
+    opacity: 100;
+}
+.bowl:hover{
+    height: 28rem;
+    width: 20rem;
+    background-color: #fff;
+}
+
+.cattoyimage{
+    position: absolute;
+    top:2rem;
+    height: 12rem;
+    width: 12rem;
+    /* display: none; */
+}
+
+.treat .cattoyimage{
+    top:1rem;
+    height: 15rem;
+    width: 12rem;
+}
+
+#prev{
+    position: absolute;
+    font-size: 3rem;
+    left:0.5rem;
+    color:#006096;
+}
+
+#next{
+    position: absolute;
+    right:0.5rem;
+    font-size: 3rem;
+    color:#006096;
+}
+
+
+/* Footer */
+.footer{
+    height:50vh;
+    background-color: #4D7B95;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.footermoves{
+    top:20rem;
+}
+.footermovesdown{
+    top:100rem;
+}
+.information{
+    position: relative;
+    left:4rem;
+    top:2rem;
+    color:#fff;
+}
+
+.contact{
+    font-size: 5rem;
+    position: absolute;
+    color: #41677e;
+    top:0rem;
+    left:4rem;
+    text-align: center;
+}
+.listofcontacts{
+    position: absolute;
+    top:4.5rem;
+    left:4.5rem;
+    z-index: 100;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.listofcontacts li{
+    margin: 2rem -2rem;
+}
+
+.listofcontacts li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.product{
+    height:80vh;
+}
+
+.productinfo{
+    position: absolute;
+    top:10rem;
+    height: 25rem;
+    right:20rem;
+    /* background-color: #5bd5ee; */
+}
+
+.toyballname{
+    position: relative;
+    top:1rem;
+    font-size: 3rem;
+    color: #006096;
+}
+
+.review{
+    position: relative;
+    top:2rem;
+}
+.review .iconify{
+    font-size: 2rem;
+}
+
+.toyballcost{
+    position: relative;
+    top:4rem;
+    font-size: 2.5rem;
+    color: #f55959;
+}
+
+.buybtn{
+    height: 3.5rem;
+    width: 65%;
+    position: absolute;
+    top:15rem;
+    border: none;
+    font-size: 1.5rem;
+    background-color: #5bd5ee;
+    color: #fff;
+}
+.wishbtn{
+    height: 3.5rem;
+    width: 65%;
+    position: absolute;
+    top:19rem;
+    font-size: 1.5rem;
+    border: 1px solid #5bd5ee;
+    background-color: transparent;
+    color: #5bd5ee;
+}
+.dogcostdiv {
+    height: 4.8rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 0rem;
+    background-color: #a8effd;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+    opacity: 0;
+    margin-top: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.dogcostdivvisible{
+    opacity: 100%;
+    margin-top: 0;
+    visibility: visible;
+    transition: all .5s ease-in-out;
+}
+.catcostdiv {
+    height: 4.8rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 0rem;
+    background-color: #a8effd;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+    opacity: 0;
+    margin-top: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.catcostdivvisible{
+    opacity: 100%;
+    margin-top: 0;
+    visibility: visible;
+    transition: all .5s ease-in-out;
+}
+
+.buyproductbtn {
+    height: 3rem;
+    width: 7rem;
+    background-color: #5bd5ee;
+    color: #ffffff;
+    border: none;
+    font-size: 1.3rem;
+    opacity: 0;
+    margin-top: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.buyvisible {
+    opacity: 100%;
+    margin-top: 0;
+    visibility: visible;
+    transition: all .5s ease-in-out;
+}
+
+.wishproductbtn {
+    height: 3rem;
+    width: 7rem;
+    color: #00bbe6;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #00bbe6;
+    left: 1rem;
+    opacity: 0;
+    margin-top: 1rem;
+    transition: all .5s ease-in-out;
+    font-size: 1.3rem;
+}
+
+.wishvisible {
+    opacity: 100%;
+    margin-top: 0;
+    visibility: visible;
+    transition: all .5s ease-in-out;
+}
+
+.imagecontainer{
+    height: 23rem;
+    width: 23rem;
+    background-color: #fff;
+    position: relative;
+    top: 3rem;
+    left: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 20px 10px  rgba(0, 119, 255, 0.171);
+    border:1px solid #000;
+}
+
+.toyball{
+    position: absolute;
+    height:10rem;
+    width: 10rem;
+}
+
+.borderline{
+    position: relative;
+    top:9rem;
+    height: .1rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+}

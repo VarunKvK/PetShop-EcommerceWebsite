@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Lexend:wght@200;500;700&family=Poppins&display=swap');
+
+
+.fillerrordiv{
+    font-family: 'Allerta', sans-serif;
+    position: absolute;
+    top: 8rem;
+    height: 3rem;
+    width: 25rem;
+    border-radius: .5rem;
+    background-color: rgb(255, 148, 148);
+    opacity: 90%;
+    border: 1.8px solid rgb(248, 39, 39);
+    left: 36%;
+    transform: translateX(100rem);
+    transition: all 1s ease-in-out;
+}
+
+.fillerrordivcomes{
+    transition: all 1s ease-in-out;
+    transform: translateX(0rem);
+}
+
+.errordiv{
+    font-family: 'Allerta', sans-serif;
+    position: relative;
+    left:1rem;
+    color: rgb(226, 17, 17);
+    top: .3rem;
+}
+
+.errordiv .iconify{
+    position: relative;
+    top: .5rem;
+}
+
+.errortext{
+    position: relative;
+    top: -.9rem;
+    left: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.formaterrordiv{
+    font-family: 'Allerta', sans-serif;
+    position: absolute;
+    top: 8rem;
+    height: 3rem;
+    width: 25rem;
+    border-radius: .5rem;
+    background-color: rgb(255, 148, 148);
+    opacity: 90%;
+    border: 1.8px solid rgb(248, 39, 39);
+    left: 36%;
+    transform: translateX(100rem);
+    transition: all 1s ease-in-out;
+}
+.formaterrordivcomes{
+    transition: all 1s ease-in-out;
+    transform: translateX(0rem);
+}
+
+.messsageerrordiv{
+    font-family: 'Allerta', sans-serif;
+    position: absolute;
+    top: 8rem;
+    height: 3rem;
+    width: 25rem;
+    border-radius: .5rem;
+    background-color: rgb(255, 148, 148);
+    opacity: 90%;
+    border: 1.8px solid rgb(248, 39, 39);
+    left: 36%;
+    transform: translateX(100rem);
+    transition: all 1s ease-in-out;
+}
+.messsageerrordivcomes{
+    transition: all 1s ease-in-out;
+    transform: translateX(0rem);
+}
+
+.messsagesuccessdiv{
+    font-family: 'Allerta', sans-serif;
+    position: absolute;
+    top: 8rem;
+    height: 3rem;
+    width: 25rem;
+    border-radius: .5rem;
+    background-color: rgb(187, 255, 148);
+    opacity: 90%;
+    border: 1.8px solid rgb(69, 187, 0);
+    left: 36%;
+    transform: translateX(100rem);
+    transition: all 1s ease-in-out;
+}
+
+.messsagesuccessdiv .errordiv .iconify{
+    color:rgb(69, 187, 0);
+}
+.successtext{
+    font-family: 'Allerta', sans-serif;
+    position: relative;
+    top: -1.2rem;
+    left: 1.2rem;
+    font-size: 1.2rem;
+    color: rgb(69, 187, 0);
+}
+.messsagesuccessdivcomes{
+    z-index: 1000;
+    transition: all 1s ease-in-out;
+    transform: translateX(0rem);
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Lexend:wght@200;500;700&family=Poppins&display=swap');
+
+
+.productcartdiv{
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 35%;
+    background-color: #E1FAFF;
+    z-index: 1000;
+    border: 1px solid #000;
+    border-right: none;
+    transform: translateX(50rem);
+    transition: all .5s linear;
+    font-family: 'Allerta', sans-serif;
+}
+.close{
+    height: 6rem;
+    width: 100%;
+    border: 1px solid #000;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.closeicon{
+    position: relative;
+    left: 1.8rem;
+    font-size: 1.8rem;
+    color: #006f85;
+    cursor:pointer
+}
+
+.carttext{
+    margin-left: 1.8rem;
+    margin-top: 1rem;
+    color: #006f85;
+}
+
+.productcartdivopen{
+    transform: translateX(0rem);
+}
+
+.itemlist{
+    position: relative;
+    top:2rem;
+    height: 3rem;
+    /* background-color: #006f85; */
+    /* position: absolute; */
+    list-style-type: none;
+    font-family: 'Allerta', sans-serif;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.itemcostlist{
+    position: relative;
+    top:2rem;
+    height: 3rem;
+    /* background-color: #006f85; */
+    /* position: absolute; */
+    list-style-type: none;
+    font-family: 'Allerta', sans-serif;
+    font-size: 1.5rem;
+    color: #006f85
+}
+
+.itemimage{
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 1rem;
+    position: relative;
+    float: right;
+    right:3rem;
+    top:-3.5rem;
+}
+
+.checkout{
+    height: 3rem;
+    width: 10rem;
+    border: none;
+    background-color: #006f85;
+    position: absolute;
+    bottom: 3rem;
+    left: 10rem;
+    color: #fff;
+}
+
+.items{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+    background-color: #006f85;
+    position: absolute;
+    opacity: 0;
+    top: -1rem;
+    right: -1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemsdiplay{
+    opacity: 100%;
+}
+
+.itemcount{
+    position: relative;
+    top: .2rem;
+    font-size: 1.2rem;
+    color: #E1FAFF;
+}

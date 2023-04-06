@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Allerta', sans-serif;
+    background-color: #EDFCFF;
+}
+
+.logodivide {
+    position: absolute;
+    width: 100%;
+    height: 5.5rem;
+    border: 1px solid #000;
+}
+
+.login {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 4rem;
+    position: relative;
+}
+
+.home {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-decoration: none;
+    color: #006096;
+    font-family: 'Allerta', sans-serif;
+    font-size: 2rem;
+}
+
+.iconify {
+    font-size: 2rem;
+    top: -.4rem;
+}
+
+.registercontainer {
+    border-radius: .5rem;
+    height: 30rem;
+    width: 30rem;
+    background-color: #caf0f8;
+    position: relative;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.registerinfo {
+    position: absolute;
+    top: 7rem;
+    left: 2rem;
+}
+
+.registertext {
+    position: absolute;
+    top: -5rem;
+    font-size: 2.5rem;
+    color: #006096;
+}
+
+.firstname {
+    color: #006096;
+    position: relative;
+    bottom: .5rem;
+}
+
+.email {
+    position: relative;
+    top: .5rem;
+    color: #006096;
+}
+
+.confirmpassword {
+    position: relative;
+    top: 1rem;
+    color: #006096;
+}
+
+.passwordtext {
+    position: relative;
+    top: 1.6rem;
+    color: #006096;
+
+}
+
+.confirmpassword {
+    position: relative;
+    top: 2.5rem;
+    color: #006096;
+
+}
+
+.firstnameinput {
+    position: relative;
+    top: 0rem;
+    height: 2rem;
+    width: 25rem;
+    border: none;
+}
+
+.emailinput {
+    height: 2rem;
+    width: 25rem;
+    border: none;
+    position: relative;
+    top: 1rem;
+}
+
+.passwordinput {
+    height: 2rem;
+    width: 25rem;
+    border: none;
+    position: relative;
+    top: 2rem;
+}
+
+.cpasswordinput {
+    position: relative;
+    top: 3rem;
+    height: 2rem;
+    width: 25rem;
+    border: none;
+}
+
+.registerbtn {
+    position: relative;
+    top: 5rem;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #006096;
+    color: #fff;
+}

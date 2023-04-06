@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetSite</title>
+
+    <!--BootstrapCss-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+
+    <!--CssCustom-->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./CssStyling/nav.css" />
+    <link rel="stylesheet" href="./CssStyling/firstpagecontent.css" />
+    <link rel="stylesheet" href="./CssStyling/secondpagecontent.css" />
+    <link rel="stylesheet" href="./CssStyling/thirdpagecontent.css" />
+    <link rel="stylesheet" href="./CssStyling/fourthpagecontent.css" />
+    <link rel="stylesheet" href="./CssStyling/dogjscontainer.css" />
+    <link rel="stylesheet" href="./CssStyling/catitemscontent.css" />
+    <link rel="stylesheet" href="./CssStyling/catjs.css" />
+    <link rel="stylesheet" href="./CssStyling/footer.css" />
+  </head>
+  <body>
+    <!--NavBar-->
+    <header >
+      <div class="link-container position-relative">
+        <ul class="links d-flex position-relative">
+          <li class="link-home position-absolute">
+            <a href="./index.html" class="home"
+              >PetSh<span
+                class="iconify position-relative"
+                data-icon="material-symbols:pets"
+                style="color: #ffb648"
+              ></span
+              >p
+            </a>
+          </li>
+          <!--NavActive not done-->
+          <div class="menu d-flex position-absolute">
+            <li class="link-about">
+              <a href="./Pages/about.html" class="about">About</a>
+            </li>
+            <li class="link-category">
+              <a href="./Pages/category.html" class="category">Category</a>
+            </li>
+          </div>
+        </ul>
+      </div>
+      <div class="inputcontainer position-relative">
+        <div class="user-container float-end position-relative d-flex">
+          <a href="./Pages/user.html">
+            <button class="user d-flex">
+              <span
+                class="iconify"
+                data-icon="emojione-monotone:dog-face"
+                style="color: black"
+              ></span>
+            </button>
+          </a>
+        </div>
+        <!-- <div class="shoppingcart">
+          <iconify-icon class="icon" icon="bytesize:cart"></iconify-icon>
+        </div> -->
+      </div>
+    </header>
+    <!--First Content-->
+    <div class="firstcontent position-relative">
+      <div class="image-container position-absolute">
+        <img
+          src="./Images/dog.png"
+          alt="GoldenRetriever"
+          class="golden-dog position-absolute"
+        />
+        <div class="circle position-absolute"></div>
+        <div class="text position-absolute d-flex">
+          <h1 class="hi-text1">Hi</h1>
+          <div class="none"></div>
+          <h1 class="hi-text2">Hi</h1>
+        </div>
+        <a
+          href="https://unsplash.com/photos/m-Doa-GTrUw"
+          class="davidimage position-absolute"
+          >DavidLezcano</a
+        >
+      </div>
+    </div>
+    <!--Second Content-->
+    <div class="secondcontent position-relative">
+      <h1 class="buddytext position-absolute mt-4">Your buddy is</h1>
+      <div class="bordercontainer position-absolute">
+        <div class="animalcontainer d-flex position-absolute">
+          <a href="./Pages/category.html#dogcategory" class="dogo">
+            <div class="dogcontainer position-absolute">
+              <span
+                class="iconify"
+                data-icon="noto:service-dog"
+                style="color: black"
+              ></span>
+            </div>
+          </a>
+          
+          <a href="./Pages/category.html#catcategory" class="cat">
+            <div class="catscontainer position-absolute">
+              <span
+                class="iconify"
+                data-icon="emojione:cat"
+                style="color: black"
+              ></span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <!--Third Content-->
+    <div class="thirdcontent position-relative">
+      <h1 class="stuffsheading">Stuffs for Dogs</h1>
+      <div class="bordercontainer2 position-absolute">
+        <div class="stuffs">
+          <!-- <div class="stuffscontainer">
+            <div class="">
+              <img/>
+            </div>
+            <div class="">
+              <h1></h1>
+              <button></button>
+            </div> -->
+          </div>
+          <div class="stuffs2">
+            
+          </div>
+        </div>
+      </div>
+      <button class="loadmore" id="loadmorebtn">LoadMore</button>
+    </div>
+    <!--Fourth Content-->
+    <div class="dogad">
+    <div class="advertisement">
+      <div class="addiv">
+        <h1 class="ad">Advertisement</h1>
+        <div class="none3"></div>
+        <h1 class="ad">Advertisement</h1>
+        <div class="none3"></div>
+        <h1 class="ad">Advertisement</h1>
+        <div class="none3"></div>
+        <h1 class="ad">Advertisement</h1>
+        <div class="none3"></div>
+      </div>
+    </div>
+    <div class="fourthcontent">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner position-relative">
+          <a href="https://www.pedigree.in/dog-foods/80-gm/pedigree-dog-treats-adult-meat-jerky-roasted-lamb">
+            <div class="carousel-item active position-relative">
+              <div class="rectone"></div>
+              <h1 class="meat">MeatJerky</h1>
+              <h3 class="pedigreetext">Sponsored by Pedigree</h3>
+              <p class="moto1">Give your pet some fresh chicken<br>Let there be Tastefullness</p>
+              <img src="./Images/pedigree1.png" class="pedigreeimage d-block" alt="...">
+              <button class="buy">Buy</button>
+            </div>
+          </a>
+          <a href="https://www.pedigree.in/dog-foods/weekly-pack/pedigree-dog-chews-dentastix-adult-medium-breed-oral-care">
+          
+            <div class="carousel-item">
+              <div class="recttwo"></div>
+              <h1 class="denta">DentaStix</h1>
+              <h3 class="pedigreetext">Sponsored by Pedigree</h3>
+              <p class="moto2">Make those teeth strong and healthy<br>Make them happy</p>
+              <img src="./Images/pedigree2.png" class="pedigreeimage d-block" alt="...">
+              <button class="buy">Buy</button>
+            </div>
+          </a>
+          <a href="https://www.pedigree.in/dog-foods/50-gms/pedigree-biscrok-biscuits-with-chicken">
+            
+            <div class="carousel-item">
+              <div class="rectthree"></div>
+            <h1 class="biscrok">Biscrok</h1>
+            <h3 class="pedigreetext">Sponsored by Pedigree</h3>
+            <p class="moto3">Wanna give snacks to your pet?<br>Try these Biscroks,Delicious</p>
+            <img src="./Images/pedigree3.png" class="pedigreeimage d-block" alt="...">
+            <button class="buy">Buy</button>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="advertisement2">
+      <div class="addiv">
+        <h1 class="ad">Advertisement</h1>
+        <div class="none3"></div>
+        <h1 class="ad">Advertisement</h1>
+        <div class="none3"></div>
+        <h1 class="ad">Advertisement</h1>
+        <div class="none3"></div>
+        <h1 class="ad">Advertisement</h1>
+        <div class="none3"></div>
+      </div>
+    </div>
+  </div>
+    <!--Fifth Content-->
+    <div class="fifthcontent position-relative">
+      <h1 class="catstuffsheading">Stuffs for Cats</h1>
+      <div class="catbordercontainer2 position-absolute">
+        <div class="catstuffs">
+          <!-- <div class="stuffscontainer">
+            <div class="">
+              <img/>
+            </div>
+            <div class="">
+              <h1></h1>
+              <button></button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <a href="./Pages/category.html#catcategory">
+      <button class="loadmore2" id="loadmorebtn2">Load More</button>
+    </a>
+    </div>
+
+    <!--Sixth Content EndingPage-->
+    <div class="footer" id="footerarea">
+      <div class="information">
+        <h1 class="contact">Contact</h1>
+        <ul class="listofcontacts">
+          <li class="email">Email: <a href="" class="emailid">varunkrishnankv2002@gmail.com</a></li>
+          <li class="telephone">Telephone No.: 8108703112</li>
+        </ul>
+        <a href="./Pages/adminpage.html" class="adminpage">AdminPage</a>
+      </div>
+    </div>
+
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Iconify-->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <!--Gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    
+    <!--CustomJavaScript-->
+    <script src="./JavaScript/dogdata.js"></script>
+    <script src="./JavaScript/catdata.js"></script>
+    <script src="./JavaScript/animation.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!-- Categorydiv -->
+    <!-- CaTdIV -->
+    <div class="bodypage">
+      <div class="categorycat position-relative">
+        <!-- Create an id to redirect to the cat category when clicked on second page cat icon -->
+        <h1 class="cattitle" id="catcategory">Cat Toys</h1>
+        <div
+          id="carouselExampleControlsNoTouching"
+          class="carousel slide"
+          data-bs-touch="false"
+          data-bs-interval="false"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" id="catdata">
+              <!-- <div>
+                <img src="..." class="d-block w-100" alt="..." />
+              </div> -->
+            </div>
+            <div class="carousel-item" id="catdata2">
+              <!-- <img src="..." class="cattoyimage d-block w-100" alt="..."> -->
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            id="prevbtn"
+            type="button"
+            data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev"
+          >
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            <span class="iconify" id="prev" data-icon="bi:arrow-down-circle-fill" data-rotate="90deg">Next</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            id="nextbtn"
+            type="button"
+            data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next"
+          >
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            <span class="iconify" id="next" data-icon="bi:arrow-down-circle-fill" data-rotate="270deg"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- CategoryEnd -->

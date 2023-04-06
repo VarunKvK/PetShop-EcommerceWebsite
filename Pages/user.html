@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User</title>
+    <!-- CustomCss -->
+    <link rel="stylesheet" href="../CssStyling/user.css" />
+    <link rel="stylesheet" href="../CssStyling/erroruser.css">
+    <link rel="stylesheet" href="../CssStyling/success.css">
+  </head>
+  <body>
+    <div class="login">
+      <div class="logodivide"></div>
+      <a href="../index.html" class="home"
+        >PetSh<span
+          class="iconify position-relative"
+          data-icon="material-symbols:pets"
+          style="color: #ffb648"
+        ></span
+        >p
+      </a>
+      <div class="logincontainer">
+          <div class="logininfo">
+              <h1 class="logintext">Login</h1>
+            <h2 class="usernametext">Email</h2>
+            <input type="text" class="emailinput" />
+            <div class="divide"></div>
+            <h2 class="passwordtext">Password</h2>
+            <input type="password" class="passwordinput" /><br>
+            <button class="submitbtn">Submit</button>
+            <h3 class="newusertext">Don't have an account?<a href="../Pages/register.html">Register here</a></h3>
+          </div>
+      </div>
+    </div>
+  </div>
+
+     <!-- ErrorUserName -->
+     <div class="errorbodyclass">
+     <div class="errorcontainer">
+       <div class="errorinformation">
+        <h1 class="errortext">Error</h1>
+        <div class="errorinfo">
+          <span class="iconify" data-icon="carbon:close-outline" data-rotate="270deg"></span>
+          <h3 class="errordescription">Check the UserName</h3>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <!-- ErrorPassword -->
+     <div class="errorbodyclass" id="passworderror">
+     <div class="errorcontainer">
+       <div class="errorinformation">
+        <h1 class="errortext">Error</h1>
+        <div class="errorinfo">
+          <span class="iconify" data-icon="carbon:close-outline" data-rotate="270deg"></span>
+          <h3 class="errordescription">Check the Password</h3>
+        </div>
+       </div>
+      </div>
+     </div>
+     
+     <!--Success -->
+     <div class="spinner">
+      <span
+      class="iconify position-relative"
+      data-icon="material-symbols:pets"
+      style="color: #ffb648"
+    ></span>
+    </div>
+     <div class="successbodyclass">
+      <div class="logcontainer">
+        <div class="successinformation">
+        <h1 class="successtext">Success</h1>
+        <div class="successinfo">
+          <span class="iconify" data-icon="teenyicons:tick-circle-outline"></span>
+            <h3 class="successdescription">SuccessFully Logged-In</h3>
+        </div>
+      </div>
+    </div>
+     </div>
+
+     <!-- Custom JavaScript -->
+     <script src="../JavaScript/uservalidation.js"></script>
+     <!--Iconify-->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+     <!-- Custom JavaScript -->
+     <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-auth.js";
+        import {
+        getDatabase,
+        ref,
+        update,
+      } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js";
+       
+  //     const firebaseConfig = {
+  //   apiKey: "AIzaSyCtUpoUgdhciZZvWfSUP47HpuQMFtJ0GRc",
+  //   authDomain: "login-ac73d.firebaseapp.com",
+  //   projectId: "login-ac73d",
+  //   storageBucket: "login-ac73d.appspot.com",
+  //   messagingSenderId: "274611982784",
+  //   appId: "1:274611982784:web:95842e1f28e9f09a023825"
+  // };
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBWnIemkZ4mX6dyzyhaix8w1fQr-JJwmcE",
+    authDomain: "logindata-62568.firebaseapp.com",
+    projectId: "logindata-62568",
+    storageBucket: "logindata-62568.appspot.com",
+    messagingSenderId: "447491630212",
+    appId: "1:447491630212:web:d8c98b8eaa46cf17cc0ed1"
+  };
+      const submitbtn = document.querySelector(".submitbtn");
+      const successmessage = document.querySelector(".successbodyclass");
+      const errormessage = document.querySelector(".errorbodyclass");
+      const spinner = document.querySelector(".spinner");
+
+      submitbtn.addEventListener('click',(e)=>{
+        spinner.classList.add('.spinnervisible');
+        const email = document.querySelector(".emailinput").value;
+        const password = document.querySelector(".passwordinput").value;
+        // console.log(email)
+        signInWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            // Signed in 
+            const user = userCredential.user;
+            // ...
+            var lgdate=new Date();
+            update(ref(database, "users/" + name), {
+              last_login:lgdate
+            })
+            .then(() => {
+                successmessage.classList.add("displaying");
+                location.href='../index.html';
+              })
+              .catch((error) => {
+                errormessage.classList.add("displaying");
+              });
+          })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        errormessage.classList.add("displaying");
+      });
+    })
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth();
+      const database = getDatabase(app);
+     </script>
+
+  </body>
+</html>

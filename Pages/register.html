@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <!-- CustomCss -->
+    <link rel="stylesheet" href="../CssStyling/register.css" />
+    <link rel="stylesheet" href="../CssStyling/erroruser.css" />
+    <link rel="stylesheet" href="../CssStyling/success.css" />
+  </head>
+  <body>
+    <div class="register position-relative">
+      <div class="logodivide position-absolute"></div>
+      <a href="../index.html" class="home"
+        >PetSh<span
+          class="iconify position-relative"
+          data-icon="material-symbols:pets"
+          style="color: #ffb648"
+        ></span
+        >p
+      </a>
+      <div class="registercontainer position-relative">
+        <div class="registerinfo">
+          <h1 class="registertext">Register</h1>
+          <h2 class="firstname">FirstName</h2>
+          <input type="text" class="firstnameinput" />
+          <h2 class="email">Email</h2>
+          <input type="text" class="emailinput" />
+          <h2 class="passwordtext">Password</h2>
+          <input type="password" class="passwordinput" />
+          <button class="registerbtn">Register</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ErrorInfo -->
+    <div class="errorbodyclass">
+      <div class="errorcontainer">
+        <div class="errorinformation">
+          <h1 class="errortext">Error</h1>
+          <div class="errorinfo">
+            <span
+              class="iconify"
+              data-icon="carbon:close-outline"
+              data-rotate="270deg"
+            ></span>
+            <h3 class="errordescription">Check the Information</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ErrorPassword -->
+    <div class="passwordbodyclass">
+      <div class="errorcontainer">
+        <div class="errorinformation">
+          <h1 class="errortext">Error</h1>
+          <div class="errorinfo">
+            <span
+              class="iconify"
+              data-icon="carbon:close-outline"
+              data-rotate="270deg"
+            ></span>
+            <h3 class="errordescription">Check the Password</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Success -->
+    <div class="successbodyclass">
+      <div class="logcontainer">
+        <div class="successinformation">
+          <h1 class="successtext">Success</h1>
+          <div class="successinfo">
+            <span
+              class="iconify"
+              data-icon="teenyicons:tick-circle-outline"
+            ></span>
+            <h3 class="successdescription">SuccessFully LogedIn</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Iconify-->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <!-- CustomJavaScript -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+      import {
+        getAuth,
+        createUserWithEmailAndPassword
+      } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-auth.js";
+      import {
+        getDatabase,
+        set,
+        ref,
+        update,
+      } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+  //     const firebaseConfig = {
+  //   apiKey: "AIzaSyCtUpoUgdhciZZvWfSUP47HpuQMFtJ0GRc",
+  //   authDomain: "login-ac73d.firebaseapp.com",
+  //   projectId: "login-ac73d",
+  //   storageBucket: "login-ac73d.appspot.com",
+  //   messagingSenderId: "274611982784",
+  //   appId: "1:274611982784:web:95842e1f28e9f09a023825"
+  // };
+  const firebaseConfig = {
+    apiKey: "AIzaSyBWnIemkZ4mX6dyzyhaix8w1fQr-JJwmcE",
+    authDomain: "logindata-62568.firebaseapp.com",
+    projectId: "logindata-62568",
+    storageBucket: "logindata-62568.appspot.com",
+    messagingSenderId: "447491630212",
+    appId: "1:447491630212:web:d8c98b8eaa46cf17cc0ed1"
+  };
+      const registerbtn = document.querySelector(".registerbtn");
+      const successmessages = document.querySelector(".successbodyclass");
+      const errormessages = document.querySelector(".errorbodyclass");
+      const passwordbodyclass = document.querySelector(".passwordbodyclass");
+
+      registerbtn.addEventListener("click", (e) => {
+        const email = document.querySelector(".emailinput").value;
+        const name = document.querySelector(".firstnameinput").value;
+        const password = document.querySelector(".passwordinput").value;
+
+        createUserWithEmailAndPassword(auth, email, password,name)
+          .then((userCredential) => {
+            // Signed in
+            const user = userCredential.user;
+            // ...user.uid
+            set(ref(database, "users/" + name), {
+              username: name,
+              email: email,
+              password: password
+            })
+              .then(() => {
+                successmessages.classList.add("displaying");
+                // location.href = "user.html";
+                console.log(user.email );
+              })
+              .catch((error) => {
+                if(email==user.email){
+                  passwordbodyclass.classList.add("displaying");
+                }
+                alert(error)
+              });
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert(errorMessage)
+
+            // ..
+          });
+      });
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth();
+      const database = getDatabase(app);
+    </script>
+
+    <script src="../JavaScript/register.js"></script>
+  </body>
+</html>

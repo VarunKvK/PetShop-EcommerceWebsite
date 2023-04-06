@@ -1,0 +1,79 @@
+.footer{
+    height:50vh;
+    background-color: #4D7B95;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footermovesdown{
+    position: relative;
+    top:35rem;
+}
+
+.information{
+    position: relative;
+    padding-left:4rem;
+    top:2rem;
+    color:#fff;
+    /* height: 7rem;
+    width: 30%; */
+    border: 1px solid #86d3ff;
+}
+
+.contact{
+    font-size: 5rem;
+    position: absolute;
+    color: #ffffff;
+    top:0rem;
+    left:4rem;
+    text-align: center;
+}
+.listofcontacts{
+    position: absolute;
+    top:6rem;
+    left:4.5rem;
+    z-index: 100;
+    list-style: none;
+    font-size: 2rem;
+}
+
+.listofcontacts li{
+    margin: 2rem -2rem;
+}
+
+.listofcontacts li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.adminpage{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    float: right;
+    right: 8rem;
+    top: 16rem;
+    transition: all 1s  ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .adminpage::before :hover{
+    content:'';
+    position: absolute;
+    height: 2rem;
+    width: 7rem;
+    margin-right: 10rem;
+    border: 1px solid #86d3ff ;
+    transition: all 1s  ease-in-out;
+} */
+
+.adminpage :hover{
+    color: #86d3ff;
+    transition: all 1s  ease-in-out;
+}
+
+
+
+

@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Lexend:wght@200;500;700&family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #EDFCFF;
+}
+.link-container {
+    height: 6rem;
+    padding: 2rem;
+    border: 1px solid #000;
+    width: 76%;
+    z-index: 10;
+}
+
+.links {
+    font-family: 'Allerta', sans-serif;
+    height: 2rem;
+    width: 50%;
+    list-style: none;
+    left: 0;
+}
+.shoppingcart{
+    position: absolute;
+    right: -5.5rem;
+    top:rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.shoppingcart .icon{
+    font-size: 1.7rem;
+}
+
+.link-home {
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+}
+
+.link-home a {
+    color: #006096;
+    text-decoration: none;
+    
+}
+
+.link-home .iconify {
+    font-size: 2rem;
+    top: -.4rem;
+}
+
+.menu {
+    top: .5rem;
+    /* right:-15rem; */
+    left: 15rem;
+}
+
+.menu li {
+    text-align: center;
+    margin-right: 7rem;
+}
+
+.menu li a {
+    color: #006096;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.active {
+    content: " ";
+    padding: 1rem;
+    background: #006096;
+    color: #fff;
+}
+
+.inputcontainer {
+    height: 6rem;
+    width: 50%;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    float: right;
+    top: -6rem;
+}
+
+.searchcontainer {
+    top: 1.3rem;
+    left: 10rem;
+    border-radius: 2rem;
+    border: 1px solid #006096;
+    height: 3rem;
+    width: 15rem;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+
+}
+
+.searchcontainer .iconify {
+    left: 1rem;
+    color: #006096;
+}
+
+.searchinput {
+    padding-left: 2rem;
+    border: 1px solid #006096;
+    height: 2rem;
+    width: 14rem;
+    border-radius: 3rem;
+    background-color: transparent;
+    color: #006096;
+}
+
+.user-container {
+    border-radius: 3rem;
+    border: 1px solid #000;
+    height: 4rem;
+    width: 4rem;
+    align-items: center;
+    justify-content: center;
+    right: 7rem;
+    top: .6rem;
+}
+
+.user {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    border: 1px solid #000;
+    background: transparent;
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/*AboutPageCss*/
+
+.aboutus{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EDFCFF;
+}
+
+.aboutheader{
+    color: #006096;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    top:3rem;
+}
+
+.storeimagediv{
+    width: 100%;
+    height: 50%;
+    top:2rem;
+}
+
+.store{
+    width: 100%;
+    height: 20rem;
+}
+
+.aboutusdescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 5rem 10rem;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Allerta', sans-serif;
+    color: #006096;
+}
+
+/* Footer */
+.footer{
+    height:50vh;
+    background-color: #4D7B95;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.footermoves{
+    top:20rem;
+}
+.footermovesdown{
+    top:35rem;
+}
+.information{
+    position: relative;
+    left:4rem;
+    top:2rem;
+    color:#fff;
+}
+
+.contact{
+    font-size: 5rem;
+    position: absolute;
+    color: #41677e;
+    top:0rem;
+    left:4rem;
+    text-align: center;
+}
+.listofcontacts{
+    position: absolute;
+    top:4.5rem;
+    left:4.5rem;
+    z-index: 100;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.listofcontacts li{
+    margin: 2rem -2rem;
+}
+
+.listofcontacts li a{
+    text-decoration: none;
+    color:#fff;
+}

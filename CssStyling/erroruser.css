@@ -1,0 +1,68 @@
+
+.errorbodyclass{
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: rgba(116, 116, 116, 0.61);
+    visibility: hidden;
+}
+.passwordbodyclass{
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: rgba(116, 116, 116, 0.61);
+    visibility: hidden;
+}
+
+.errorcontainer{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    height: 7rem;
+    width: 25rem;
+    background-color: rgb(255, 182, 182);
+    border: 1px solid rgb(248, 54, 54);
+    border-radius: .5rem;
+    opacity: 95%;
+}
+
+.errorinformation{
+    position: relative;
+    left: 2rem;
+    top:1rem;
+}
+.errortext{
+    color:rgb(245, 67, 67);
+    font-size: 1.5rem;
+}
+
+.errorinfo{
+    position: relative;
+}
+
+.errorinfo .iconify{
+    position: absolute;
+    top: -1.9rem;
+    left:4rem;
+    color: rgb(245, 67, 67);
+}
+
+
+.errordescription{
+    color: rgb(245, 67, 67);
+    top: 1rem;
+    left:0rem;
+    position: absolute;
+}
+
+
+.displaying{
+    visibility: visible;
+}

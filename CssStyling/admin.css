@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Lexend:wght@200;500;700&family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*NavBar*/
+
+body{
+    background-color: #EDFCFF;
+    overflow-x: hidden;
+}
+
+.link-container {
+    height: 6rem;
+    padding: 2rem;
+    border: 1px solid #000;
+    width: 100%;
+    z-index: 10;
+    /* background-color: #09adce; */
+}
+
+.links {
+    font-family: 'Allerta', sans-serif;
+    height: 2rem;
+    width: 100%;
+    /* background-color: #09adce; */
+    list-style: none;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+
+.link-home {
+    position: absolute;
+    font-size: 2rem;
+}
+
+.link-home a {
+    color: #006096;
+}
+
+.link-home .iconify {
+    font-size: 2rem;
+    top: -.4rem;
+}
+
+.table{
+    position: relative;
+    top: 4rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50rem;
+    height: 15rem;
+    text-align: center;
+    font-family: 'Allerta', sans-serif;
+    border: 1px solid #000;
+}
+
+.header{
+    height: 3rem;
+    color: #fff;
+    background-color: #000;
+}
+
+
+
+.insertinfohide{
+    visibility: visible;
+}
+
+.editbtn{
+    height: 4rem;
+    width: 9rem;
+    border: none;
+    background-color: #006096;
+    color:#EDFCFF;
+    position: absolute;
+    bottom:10rem;
+    left:45%;
+    font-size: 1.5rem;
+    transition: all .1s  ease-in-out;
+}
+
+.editbtn:hover{
+    width: 9.5rem;
+    border: 1px solid #006096;
+    background-color: transparent;
+    color: #006096;
+}
+.insertinfo{
+    /* visibility: hidden; */
+    font-family: 'Allerta', sans-serif;
+    font-size: 1rem;
+    height: 25rem;
+    width: 50rem;
+    position: relative;
+    background: #9ae7f7;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    top:-11.5rem;
+    transform: translateX(90rem);
+    transition: all 1s  ease-in-out;
+}
+.insertinfoanimate{
+    transform: translateX(17.1rem);
+    transition: all 1s  ease-in-out;
+}
+
+.insertinfo h1{
+    color: #006096;
+}
+.nameinput{
+    border: none;
+    height: 1.5rem;
+    width: 20rem;
+    padding: 1rem;
+}
+.emailinput{
+    padding: 1rem;
+    border: none;
+    height: 1.5rem;
+    width: 20rem;
+}
+.addressinput{
+    padding: 1rem;
+    border: none;
+    height: 1.5rem;
+    width: 20rem;
+}
+.btndiv{
+    position: relative;
+    top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-row: 4rem;
+}
+
+.btndiv button{
+    text-align: center;
+    height: 4rem;
+    width: 7rem;
+    font-size: 1.3rem;
+    border: none;
+    background-color: #006096;
+    color:#EDFCFF;
+}

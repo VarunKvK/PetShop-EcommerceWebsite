@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Lexend:wght@200;500;700&family=Poppins&display=swap');
+
+/*FirstContent*/
+
+.firstcontent {
+    height: 80vh;
+    border: 1px solid #000;
+    border-top: none;
+}
+
+.image-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #E1FAFF;
+    border: 1px solid #000;
+    border-top: none;
+    border-bottom: .5px solid #000;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.golden-dog {
+    height: 39.7rem;
+    top: -6.7rem;
+    z-index: 5;
+}
+
+.circle {
+    top: 9%;
+    left: 27%;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 30rem;
+    background-color: #FFB648;
+}
+
+.text {
+    z-index: 4;
+}
+
+.hi-text1 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 15rem;
+    font-weight: 100;
+    color: #006096;
+}
+
+.none {
+    height: 100%;
+    width: 23rem;
+}
+
+.hi-text2 {
+    color: #006096;
+    font-weight: 100;
+    font-family: 'Lexend', sans-serif;
+    font-size: 15rem;
+}
+
+.davidimage {
+    right: .5rem;
+    bottom: .5rem;
+}

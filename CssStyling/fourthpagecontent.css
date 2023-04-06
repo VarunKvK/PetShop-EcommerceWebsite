@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Lexend:wght@200;500;700&family=Poppins&display=swap');
+
+/*Fourth content*/
+.dogad{
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.fourthcontent{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-item {
+    background-color: #a9f1ff;
+    height: 19rem;
+    width:  100%;
+}
+
+.pedigreeimage{
+    position: absolute;
+    top:3rem;
+    left:17%;
+    height: 15rem;
+    width:  15rem;
+}
+
+.meat{
+    font-size: 4rem;
+    position: absolute;
+    right: 15rem;
+    color: #0081cc;
+}
+.moto1{
+    color: #0071b3;
+    position: absolute;
+    right:  15rem;  
+    top:7rem;
+    font-size: 2rem; 
+    text-align: right;
+}
+.denta{
+    font-size: 4rem;
+    position: absolute;
+    right:  15rem;   
+    color: #0081cc;
+}
+
+.biscrok{
+    color: #0081cc;
+    font-size: 4rem;
+    position: absolute;
+    right:  15rem;   
+}
+
+.pedigreetext{
+    font-size: .7rem;
+}
+
+.moto2{
+    color: #0071b3;
+    position: absolute;
+    right:  15rem;  
+    top:7rem;
+    font-size: 2rem; 
+    text-align: right;
+}
+.moto3{
+    color: #0071b3;
+    position: absolute;
+    right:  15rem;  
+    top:7rem;
+    font-size: 2rem; 
+    text-align: right;
+}
+
+.buy{
+    height: 3rem;
+    width: 10rem;
+    border: none;
+    background-color: #006096;
+    color: #ffffff;
+    position: absolute;
+    right:  15rem;  
+    top:14rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.advertisement{
+    position: relative;
+    height: 3rem;
+    width: 100%;
+    background-color: #5bd5ee;
+}
+
+.addiv{
+    overflow-y: hidden;
+    color: #0081cc;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    animation: advertisement 20s infinite linear;
+}
+.none3{
+    height: 3rem;
+    width: 5rem;
+}
+
+.advertisement2{
+    position: relative;
+    height: 3rem;
+    width: 100%;
+    top:-2.7rem;
+    background-color: #5bd5ee;
+}
+
+.rectone{
+    height: 10rem;
+    width: 18rem;
+    background: #6bc9ff;
+    position: absolute;
+    left: 0;
+    top:5.5rem;
+}
+.recttwo{
+    height: 10rem;
+    width: 18rem;
+    background: #6bc9ff;
+    position: absolute;
+    left: 0;
+    top:5.5rem;
+}
+.rectthree{
+    height: 10rem;
+    width: 18rem;
+    background: #6bc9ff;
+    position: absolute;
+    left: 0;
+    top:7rem;
+}
+
+.advertisementdown{
+    top:32rem;
+}
+
+@keyframes advertisement {
+    0%{
+        transform: translateX(-90rem);
+    }
+    100%{
+        transform: translateX(90rem);
+    }
+}

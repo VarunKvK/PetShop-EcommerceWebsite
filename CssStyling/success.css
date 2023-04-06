@@ -1,0 +1,58 @@
+
+.successbodyclass{
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    background-color: rgba(116, 116, 116, 0.61);
+    visibility: hidden;
+}
+
+.logcontainer{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    height: 7rem;
+    width: 25rem;
+    background-color: rgb(182, 255, 182);
+    border: 1px solid rgb(55, 196, 50);
+    border-radius: .5rem;
+    opacity: 95%;
+}
+
+.successinformation{
+    position: relative;
+    left: 2rem;
+    top:1rem;
+}
+.successtext{
+    color:rgb(55, 196, 50);
+    font-size: 1.5rem;
+}
+
+.successinfo{
+    position: relative;
+}
+
+.successinfo .iconify{
+    position: absolute;
+    top: -1.9rem;
+    left:6.2rem;
+    color: rgb(55, 196, 50);
+}
+
+
+.successdescription{
+    color: rgb(55, 196, 50);
+    top: 1rem;
+    left:0rem;
+    position: absolute;
+}
+
+
+.displaying{
+    visibility: visible;
+}

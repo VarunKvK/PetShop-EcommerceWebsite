@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Allerta', sans-serif;
+    background-color: #EDFCFF;
+}
+
+.logodivide {
+    position: absolute;
+    width: 100%;
+    height: 5.5rem;
+    border: 1px solid #000;
+}
+
+.login {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 4rem;
+    position: relative;
+}
+
+.home {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-decoration: none;
+    color: #006096;
+    font-family: 'Allerta', sans-serif;
+    font-size: 2rem;
+}
+
+.iconify {
+    font-size: 2rem;
+    top: -.4rem;
+}
+
+.logincontainer {
+    border-radius: .5rem;
+    height: 30rem;
+    width: 30rem;
+    background-color: #caf0f8;
+    position: relative;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logininfo {
+    position: absolute;
+    top: 9rem;
+    left: 2rem;
+}
+
+.divide {
+    height: 3rem;
+    position: relative;
+}
+
+.logintext {
+    position: absolute;
+    top: -7rem;
+    font-size: 2.5rem;
+    color: #006096;
+
+}
+
+.usernametext {
+    color: #006096;
+
+}
+
+.passwordtext {
+    color: #006096;
+
+}
+
+.emailinput {
+    height: 2rem;
+    width: 25rem;
+    border: none;
+}
+
+.passwordinput {
+    height: 2rem;
+    width: 25rem;
+    border: none;
+}
+
+.submitbtn {
+    position: relative;
+    top: 2rem;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #006096;
+    color: #fff;
+}
+
+.newusertext {
+    color: #006096;
+    position: absolute;
+    bottom: -4.5rem;
+    font-size: .9rem;
+}
+
+.newusertext a {
+    color: #e9a540;
+}
+
+.spinner {
+    height: 4rem;
+    width: 4rem;
+    border: .4rem solid #fdb548;
+    border-radius: 3rem;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    opacity: 0;
+    transform-origin: center;
+    animation: 1s spinnerround infinite ease-in-out;
+}
+
+.spinner .iconify {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 2rem;
+}
+
+.spinnervisible {
+    opacity: 100%;
+}
+
+@keyframes spinnerround {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}

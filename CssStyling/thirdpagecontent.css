@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Lexend:wght@200;500;700&family=Poppins&display=swap');
+
+/*ThirdContent*/
+
+.thirdcontent {
+    height: 75vh;
+    top: -5rem;
+    z-index: 100;
+}
+
+.loadmore{
+    height: 4rem;
+    width: 10rem;
+    border:1px solid #5bd5ee;
+    background: transparent;
+    color: #5bd5ee;
+    font-family: 'Allerta', sans-serif;
+    font-size: 1.2rem;
+    position: relative;
+    top:-1rem;
+    left: 45%;
+    transition: all .3s ease-in-out;
+}
+
+.loadmore:hover{
+    content: " ";
+    height: 4rem;
+    width: 15rem;
+    background: #5bd5ee;
+    color: #fff;
+    margin-left: -2rem;
+    border-radius: 2rem;
+}
+
+.loadmoredown{
+    visibility: hidden;
+}
+.stuffsheading {
+    margin-left: 15rem;
+    color: #006096;
+}
+
+.bordercontainer2 {
+    height: 30.1rem;
+    width: 100%;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bordercontainer2expand{
+    position: relative;
+    height: 150%;
+    transition: all .4s ease-in-out;
+}

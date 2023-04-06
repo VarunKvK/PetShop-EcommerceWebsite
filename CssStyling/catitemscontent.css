@@ -1,0 +1,84 @@
+.fifthcontent{
+    position: relative;
+    height: 100vh;
+}
+
+.fifthcontentgoesdown{
+    position: relative;
+    top:35rem;
+}
+.catbordercontainer2{
+    width: 100%;
+    height: 75%;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catstuffs{
+    border: 1px solid #000;
+    border-top: 0px;
+    border-bottom: 0px;
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 1rem;
+    row-gap: 2.5rem;
+}
+
+.catstuffs2{
+    border: 1px solid #000;
+    border-top: 0px;
+    border-bottom: 0px;
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 1rem;
+    row-gap: 2.5rem;
+}
+
+.catstuffsheading{
+    position: relative;
+    left:15rem;
+    color:#006096;
+}
+
+.loadmore2{
+    height: 4rem;
+    width: 10rem;
+    border:1px solid #5bd5ee;
+    background: transparent;
+    color: #5bd5ee;
+    font-family: 'Allerta', sans-serif;
+    font-size: 1.2rem;
+    position: relative;
+    top:-5rem;
+    left: 45%;
+    transition: all .3s ease-in-out;
+}
+
+.loadmore2:hover{
+    content: " ";
+    height: 4rem;
+    width: 15rem;
+    background: #5bd5ee;
+    color: #fff;
+    margin-left: -2rem;
+    border-radius: 2rem;
+}
+
+.loadmore2down{
+    visibility: hidden;
+}
+
+.loadmore2goesdown{
+    position: relative;
+    top:30rem;
+}
+
+

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Lexend:wght@200;500;700&family=Poppins&display=swap');
+
+/*NavBar*/
+
+body{
+    background-color: #EDFCFF;
+}
+
+.link-container {
+    height: 6rem;
+    padding: 2rem;
+    border: 1px solid #000;
+    width: 76%;
+    z-index: 3;
+}
+
+.links {
+    font-family: 'Allerta', sans-serif;
+    height: 2rem;
+    width: 50%;
+    list-style: none;
+    left: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.link-home {
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+}
+
+.link-home a {
+    color: #006096;
+}
+.shoppingcart{
+    position: absolute;
+    right: 2rem;
+    top:0rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.shoppingcart .icon{
+    font-size: 1.7rem;
+}
+
+
+.link-home .iconify {
+    font-size: 2rem;
+    top: -.4rem;
+}
+
+.menu {
+    top: .5rem;
+    /* right:-15rem; */
+    left: 15rem;
+}
+
+.menu li {
+    text-align: center;
+    margin-right: 7rem;
+}
+
+.menu li a {
+    color: #006096;
+    z-index: 10;
+}
+
+.active {
+    content: " ";
+    padding: 1rem;
+    background: #006096;
+    color: #fff;
+}
+
+.inputcontainer {
+    height: 6rem;
+    width: 50%;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    float: right;
+    top: -6rem;
+}
+
+.searchcontainer {
+    top: 1.3rem;
+    left: 10rem;
+    border-radius: 2rem;
+    border: 1px solid #006096;
+    height: 3rem;
+    width: 15rem;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+
+}
+
+.searchcontainer .iconify {
+    left: 1rem;
+    color: #006096;
+}
+
+.searchinput {
+    padding-left: 2rem;
+    border: 1px solid #006096;
+    height: 2rem;
+    width: 14rem;
+    border-radius: 3rem;
+    background-color: transparent;
+    color: #006096;
+}
+
+.user-container {
+    border-radius: 3rem;
+    border: 1px solid #000;
+    height: 4rem;
+    width: 4rem;
+    align-items: center;
+    justify-content: center;
+    right: 7rem;
+    top: .6rem;
+}
+
+.user {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 3rem;
+    border: 1px solid #000;
+    background: transparent;
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: center;
+}
